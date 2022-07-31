@@ -1,0 +1,28 @@
+---
+site_runtime: NODE_V16
+site_config_deployment_artifacts:
+  site_config_json: views/siteConfig.json
+  static_dir: dist
+  serverless_dir: target
+site_config_routes:
+  static_route: "*"
+  not_found_route: "/404.html"
+  internal_server_error_route: "/500.html"
+site_config_schema:
+  pages:
+    - name: Home
+      blocks:
+        - name: Body
+          views:
+            - name: Books
+              columns:
+                - name: Name
+                  type: TEXT
+                - name: Description
+                  type: TEXT
+                - name: Image URL
+                  type: STORE
+                - name: Category
+                  type: SELECT
+                - name: Published at
+                  type: DATE_TIME
