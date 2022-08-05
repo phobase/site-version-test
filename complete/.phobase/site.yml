@@ -1,14 +1,14 @@
 ---
 site_runtime: NODE_V16
-site_config_deployment_artifacts:
-  site_config_json: views/siteConfig.json
-  static_dir: dist
-  serverless_dir: target
-site_config_routes:
+site_routes:
   static_route: "*"
   not_found_route: "/404.html"
   internal_server_error_route: "/500.html"
-site_config_schema:
+site_version_deployment_artifacts:
+  site_version_artifact: siteVersion.json
+  static_dir: dist
+  serverless_dir: target
+site_version_schema:
   pages:
     - name: Home
       blocks:
