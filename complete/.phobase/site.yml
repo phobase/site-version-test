@@ -21,8 +21,8 @@ site_version_schema:
                 - name: Description
                   type: TEXT
                 - name: Image URL
-                  type: STORE
+                  type: FILE
                 - name: Category
-                  type: SELECT
+                  type: OPTION
                 - name: Published at
                   type: DATE_TIME
